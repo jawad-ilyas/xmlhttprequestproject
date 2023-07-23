@@ -16,10 +16,11 @@
     >
       <form class="flex flex-col" onsubmit="handleSubmit(event)">
         <input
-          class="text-center mx-3 outline-none border-2 border-gray-300  rounded-lg"
+          class="text-center mx-3 outline-none border-2 border-gray-300 rounded-lg"
           type="text"
           name="searchUser"
           placeholder="Enter Your Github Name  "
+          required
         />
         <button
           type="submit"
@@ -27,6 +28,7 @@
         >
           Search
         </button>
+        <p id="error" class="text-red-700 font-bold text-2xl text-captalize"></p>
       </form>
     </div>
     <div
