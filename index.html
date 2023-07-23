@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XML http Request</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-300">
+    <h1 class="text-white text-center py-3 text-3xl font-bold">
+      XMLHttpRequest Use Case
+    </h1>
+    <div
+      class="bg-white lg:w-1/4 md:w-1/3 w-full-[10%] md:mx-auto rounded-lg mt-4 form py-3 text-center"
+    >
+      <form class="flex flex-col" onsubmit="handleSubmit(event)">
+        <input
+          class="text-center mx-3 outline-none border-2 border-gray-300  rounded-lg"
+          type="text"
+          name="searchUser"
+          placeholder="Enter Your Github Name  "
+        />
+        <button
+          type="submit"
+          class="bg-gray-500 mt-3 inline-block rounded-lg py-1 text-white font-semibold mx-3"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+    <div
+      class="card bg-white lg:w-1/4 md:w-1/3 w-full-[10%] mx-4 md:mx-auto rounded-lg mt-4"
+    >
+      <div class="p-3">
+        <img
+          id="avatar"
+          class="rounded-lg h-48 mx-auto w-full object-cover"
+          alt="Image description"
+          src="https://www.w3schools.com/bootstrap4/img_avatar1.png"
+        />
+        <div class="info mt-2">
+          <h2
+            id="title"
+            class="font-semibold md:text-2xl text-xl pt-4 overflow-hidden"
+          >
+            Jawad Mughal
+          </h2>
+          <p id="bio" class="pt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+            accusamus.
+          </p>
+          <a
+            id="html_url"
+            href="https://github.com/jawadmughal0079"
+            target="_blank"
+            class="w-full block text-center bg-gray-900 py-2 rounded-lg mt-2 text-white"
+          >
+            Github
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./xmlhttprequest.js"></script>
+  </body>
+</html>
